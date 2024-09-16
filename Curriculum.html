@@ -1,0 +1,82 @@
+<!DOCTYPE html> 
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Franco</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="index.html#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="index.html#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="Skills.html" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="Curriculum.html" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="Portfolio.html" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="index.html#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="MostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+   <!-- SECCION CURRICULUM -->
+   <section id="curriculum" class="curriculum">
+    <div class="contenido-seccion">
+        <h2>Curriculum</h2>
+        <div class="fila">
+            <div class="col izquierda">
+                <h3>Educación</h3>
+                <div class="item izq">
+                    <h4>Produccion de Medios de Comunicación</h4>
+                    <span class="casa">ORT</span>
+                    <span class="fecha">2015 - 2020</spa>
+                    <div class="conectori">
+                        <div class="circuloi"></div>
+                    </div>
+                </div>
+                <div class="item izq">
+                    <h4>Tecnicatura en Desarollo de Softwear</h4>
+                    <span class="casa">UADE</span>
+                    <span class="fecha">2024 - 2026</span>
+                    <div class="conectori">
+                        <div class="circuloi"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col derecha">
+                <h3>Experiencia de trabajo</h3>
+                <div class="item der">
+                    <h4>Asistente de Operaciones</h4>
+                    <span class="casa">Midway Eventos SRL</span>
+                    <span class="fecha">2021 - 2022</span>
+                    <p>Atencion al cliente, tareas generales, asistencia en produccion de eventos, conduccion de grupos, tareas administrativas, gestion comercial y cobranzas.</p>
+                    <div class="conectord">
+                        <div class="circulod"></div>
+                    </div>
+                </div>
+                <div class="item der">
+                    <h4>Administracion</h4>
+                    <span class="casa">Estadio Modelo</span>
+                    <span class="fecha">2022 - 2023</span>
+                    <p>Atencion al cliente, Manejo de contabilidad, Manejo de cobros y pagos, Manejo de Excel, Resolucion de problemas y Multitareas.</p>
+                    <div class="conectord">
+                        <div class="circulod"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
