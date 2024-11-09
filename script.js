@@ -18,7 +18,7 @@ function efectoHabilidades() {
     const skills = document.getElementById("skills");
     const distanciaSkills = window.innerHeight - skills.getBoundingClientRect().top;
     
-    // Si la sección de habilidades está visible (en un 30% del viewport)
+    
     if (distanciaSkills >= 300) {
         const habilidades = document.getElementsByClassName("progreso");
         const animClasses = [
@@ -26,7 +26,7 @@ function efectoHabilidades() {
             "comunicacion", "trabajo", "creatividad", "dedicacion", "proyect"
         ];
 
-        // Añadir clases de animación a las habilidades
+        
         for (let i = 0; i < habilidades.length; i++) {
             habilidades[i].classList.add(animClasses[i]);
         }
