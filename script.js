@@ -39,3 +39,31 @@ window.addEventListener("scroll", efectoHabilidades);
 
 
 document.addEventListener("DOMContentLoaded", efectoHabilidades);
+
+function validarFormulario() {
+    
+    const nombre = document.getElementById("nombre").value.trim();
+    const telefono = document.getElementById("telefono").value.trim();
+    const correo = document.getElementById("correo").value.trim();
+    const tema = document.getElementById("tema").value.trim();
+    const mensaje = document.getElementById("mensaje").value.trim();
+    
+    
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    
+    if (!nombre || !telefono || !correo || !tema || !mensaje) {
+        alert("Por favor, complete todos los campos.");
+        return false;
+    }
+
+    
+    if (!emailRegex.test(correo)) {
+        alert("Por favor, ingrese una dirección de correo válida.");
+        return false;
+    }
+
+    
+    alert("Formulario enviado correctamente.");
+    return true;
+}
