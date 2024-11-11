@@ -34,7 +34,6 @@ function efectoHabilidades() {
     }
 }
 
-
 window.addEventListener("scroll", efectoHabilidades);
 
 
