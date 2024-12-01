@@ -34,10 +34,10 @@ function efectoHabilidades(){
     }
 }
 
-//detecto el scrolling para aplicar la animacion de la barra de habilidades
-window.onscroll = function(){
+// Ejecutar la función automáticamente al cargar la página
+document.addEventListener("DOMContentLoaded", function() {
     efectoHabilidades();
-} 
+});
 function validarFormulario() {
     // Obtener los valores de los campos
     const nombre = document.getElementById("nombre").value.trim();
