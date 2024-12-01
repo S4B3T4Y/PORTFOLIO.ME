@@ -55,7 +55,7 @@ html{
     cursor: pointer;
     display: none;
 }
-/* SECCION I N I C I O */
+/* SECCION INICIO */
 .inicio{
     background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1)),
     url(img/fondo.jpg);
@@ -106,6 +106,7 @@ html{
 .inicio .contenido-banner .redes a:hover{
     background-color: #1CB698;
 }
+/* SECCION SOBRE MI */
 .sobremi{
     background-color: #1e2326;
     color: #fff;
@@ -208,7 +209,7 @@ html{
 .sobremi a:hover .overlay{
     width: 100%;
 }
-/* SECCION S K I L L S */
+/* SECCION SKILLS */
 .skills{
     background-color: #252A2E;
     color: #fff;
