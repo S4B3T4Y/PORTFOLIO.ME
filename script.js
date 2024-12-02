@@ -1,5 +1,5 @@
 let menuVisible = false;
-//Función que oculta o muestra el menu
+
 function mostrarOcultarMenu(){
     if(menuVisible){
         document.getElementById("nav").classList ="";
@@ -11,7 +11,7 @@ function mostrarOcultarMenu(){
 }
 
 function seleccionar(){
-    //oculto el menu una vez que selecciono una opcion
+    
     document.getElementById("nav").classList = "";
     menuVisible = false;
 }
@@ -34,34 +34,34 @@ function efectoHabilidades(){
     }
 }
 
-// Ejecutar la función automáticamente al cargar la página
+
 document.addEventListener("DOMContentLoaded", function() {
     efectoHabilidades();
 });
 function validarFormulario() {
-    // Obtener los valores de los campos
+    
     const nombre = document.getElementById("nombre").value.trim();
     const telefono = document.getElementById("telefono").value.trim();
     const correo = document.getElementById("correo").value.trim();
     const tema = document.getElementById("tema").value.trim();
     const mensaje = document.getElementById("mensaje").value.trim();
     
-    // Expresión regular para validar el correo electrónico
+    
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-    // Validación de campos vacíos
+    
     if (!nombre || !telefono || !correo || !tema || !mensaje) {
         alert("Por favor, complete todos los campos.");
         return false;
     }
 
-   // Validación de correo electrónico
+   
    if (!emailRegex.test(correo)) {
     alert("Por favor, ingrese una dirección de correo válida.");
     return false;
 }
 
-// Si todo está bien, se puede enviar el formulario
+
 alert("Formulario enviado correctamente.");
 return true;
 }
